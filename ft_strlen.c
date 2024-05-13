@@ -10,6 +10,6 @@ int ft_strlen(char *str)
 #include <stdio.h>
 int main(void)
 {
-	printf("%d\n", );	
+	printf("%d\n", ft_strlen("12345"));	
 	return 0;
 }
