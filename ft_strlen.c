@@ -7,9 +7,9 @@ int ft_strlen(char *str)
 	return i;
 }
 
-#include <stdio.h>
-int main(void)
-{
-	printf("%d\n", ft_strlen("12345"));	
-	return 0;
-}
+// #include <stdio.h>
+// int main(void)
+// {
+// 	printf("%d\n", ft_strlen("12345"));	
+// 	return 0;
+// }
