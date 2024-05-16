@@ -4,7 +4,7 @@
 # include <stdlib.h>
 
 int				ft_isalpha(int c); //done
-int				ft_isdigit(int c); //done 
+int				ft_isdigit(int c); //done
 int				ft_isalnum(int c); //done
 int				ft_isascii(int c); //done
 int				ft_isprint(int c); //done
@@ -12,8 +12,8 @@ int				ft_strlen(const char *str); //done
 void			*ft_memset(void *s, int c, size_t n); //done
 void			ft_bzero(void *s, size_t n); //done
 void			*ft_memcpy(void *dst, const void *src, size_t n); //done
-void			*ft_memmove(void *dst, const void *src, size_t len);
-size_t			ft_strlcpy(char *dest, char *src, size_t size);
+void			*ft_memmove(void *dst, const void *src, size_t len); //done
+size_t			ft_strlcpy(char *dest, char *src, size_t size); 
 size_t			ft_strlcat(char *dest, char *src, size_t size);
 int				ft_toupper(int c); //done
 int				ft_tolower(int c); //done
