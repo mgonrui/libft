@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mariogo2 <mariogo2@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:42:21 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/05/13 19:00:10 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/06/07 18:02:22 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 char *ft_strchr(const char *str, int c)
 {
-	int i;
+//	int i;
 	char *p_str;
 	char c_is_char;
 
-	i = 0;
+	//i = 0;
 	p_str = (char *)str;
 	c_is_char = (char)c; 
 
