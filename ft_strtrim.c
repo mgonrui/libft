@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:32:11 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/06/09 19:52:06 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/06/09 20:25:47 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int ft_is_match(char const *set, char c)
 }
 char	*ft_strtrim(char const *s1, char const *set)
 {
-	char *s1_cpy;
 	char *result;
 	int i;
 	int start_i;
@@ -38,33 +37,31 @@ char	*ft_strtrim(char const *s1, char const *set)
 	i = 0;
 	start_i = 0;
 	int end_i = ft_strlen(s1) - 1;
-	s1_cpy = ft_strdup(s1);
-	if (!(s1_cpy))
+	if (!(s1))
 		return NULL;
-	while (s1_cpy[start_i] && ft_is_match(set, s1_cpy[start_i]))
+	while (s1[start_i] && ft_is_match(set, s1[start_i]))
 		start_i++;
-	while (s1_cpy[end_i] && ft_is_match(set, s1_cpy[end_i]))
+	while (s1[end_i] && ft_is_match(set, s1[end_i]))
 		end_i--;
-	// if (start_i == ft_strlen(s1))
-	// 	return result = ft_strdup("");
-	// printf("start_i: %d\n end_i: %d\n", start_i, end_i);
+	if (start_i == ft_strlen(s1))
+		return result = ft_strdup("");
 	result = malloc( sizeof(char) * (end_i - start_i) + 2);
 	if (result == NULL)
 		return NULL;
 	while (start_i <= end_i)
-		result[i++] = s1_cpy[start_i++];
+		result[i++] = s1[start_i++];
 	result[i] = '\0';
 	return result;
 }
 
 
-// int	main(void)
-// {
-// 	char *s3 = "  \t \t \n   \n\n\n\t";
-//     // char *s4 = "";
-//     printf("%s\n", ft_strtrim(s3, " \n\t"));
-// 	// char s1[] = "honlapipo";
-// 	// char s2[] = "hola"; 
-//  	// printf("%s", ft_strtrim(s1, s2));
-// 	return (0);
-// } 
+// // int	main(void)
+// // {
+// // 	char *s3 = "  \t \t \n   \n\n\n\t";
+// //     // char *s4 = "";
+// //     printf("%s\n", ft_strtrim(s3, " \n\t"));
+// // 	// char s1[] = "honlapipo";
+// // 	// char s2[] = "hola"; 
+// //  	// printf("%s", ft_strtrim(s1, s2));
+// // 	return (0);
+// // } 
