@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:32:11 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/06/09 19:44:17 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/06/09 19:52:06 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		start_i++;
 	while (s1_cpy[end_i] && ft_is_match(set, s1_cpy[end_i]))
 		end_i--;
+	// if (start_i == ft_strlen(s1))
+	// 	return result = ft_strdup("");
 	// printf("start_i: %d\n end_i: %d\n", start_i, end_i);
 	result = malloc( sizeof(char) * (end_i - start_i) + 2);
 	if (result == NULL)
@@ -53,7 +55,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 		result[i++] = s1_cpy[start_i++];
 	result[i] = '\0';
 	return result;
-
 }
 
 
