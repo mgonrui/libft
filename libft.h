@@ -24,8 +24,8 @@ void			*ft_memchr(const void *str, int c, size_t n); //done
 int 			ft_memcmp(const void *str1, const void *str2, size_t n); //done
 char 			*ft_strnstr(const char *big, const char *little, size_t len); //done
 int				ft_atoi(char *str); //done
-void			*ft_calloc(size_t num, size_t size);
-char			*ft_strdup(const char *s1);
+void			*ft_calloc(size_t num, size_t size); //done
+char 			*ft_strdup(const char *string); //done
 char			*ft_substr(char const *s, unsigned int start, size_t len);
 char			*ft_strjoin(char const *s1, char const *s2);
 char			*ft_strtrim(char const *s1, char const *set);
