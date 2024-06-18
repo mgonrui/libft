@@ -61,7 +61,7 @@ char	**ft_split(char const *s, char c)
 	p_to_strs = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
 	if (!p_to_strs)
 		return 0;
-	while (s[i])
+	while (s[i] != '\0')
 	{
 		while (s[i] == c && s[i])
 			i++;
@@ -75,24 +75,28 @@ char	**ft_split(char const *s, char c)
 		if (!p_to_strs[count])
 			return (ft_free(p_to_strs), NULL);
 			// return (NULL);
-		ft_copy_sub_to_str(&s[i - size_to_malloc], c, p_to_strs[count++]);
+		if (s[i - size_to_malloc] != '\0')
+			ft_copy_sub_to_str(&s[i - size_to_malloc], c, p_to_strs[count++]);
 	}
 	p_to_strs[count] = NULL;
 	return p_to_strs;
 }
 
 
-// int main(void)
-// {
-// 	// char *s = "split  ||this|for|me|||||!|";
-// 	char *s = "      split       this for   me  !       ";
-// 	char c = ' ';
-//     int i = 0;
-//     char **result = ft_split(s, c);	
-// 	printf("%d\n", ft_count_words(s, c));
-// 	while (result[i])
-// 	{
-// 		printf("%s\n", result[i++]);
-// 	}
-// 	return 0;
-// }
+ /* int main(void)
+ {
+ 	// char *s = "split  ||this|for|me|||||!|";
+ 	char *s = "      split       this for   me  !       ";
+ 	char c = ' ';
+     int i = 0;
+     char **result = ft_split(s, c);	
+ 	printf("%d\n", ft_count_words(s, c));
+ 	while (result[i])
+ 	{
+ 		printf("result[%d] = (%s)\n", i, result[i]);
+		i++;
+ 	}
+ 	printf("result[%d] = (%s)\n", i, result[6]);
+ 	return 0;
+ }
+ */
