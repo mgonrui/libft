@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 long int ft_count_digits(long int n)
@@ -51,6 +50,7 @@ char *ft_itoa(int n)
     return char_arr;
 }
 
+// #include <stdio.h>
 // int main(void)
 // {
 //     printf("%s\n", ft_itoa(0));
