@@ -17,23 +17,23 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*substr;
 	size_t	i;
+	size_t size_to_malloc;
 
 	i = 0;
 	if (start >= (size_t)ft_strlen(s))
 		return (ft_strdup(""));
-	if (len < (size_t)ft_strlen(s))
+	if ( start + len < (size_t)ft_strlen(s))
 	{
-		substr = malloc(sizeof(char) * len + 1);
-		if (!(substr))
-			return (NULL);
+		size_to_malloc = len;
 	}
 	else
 	{
-		substr = malloc(sizeof(char) * ((size_t)ft_strlen(s) - start) + 1);
-		if (!(substr))
-			return (NULL);
+		size_to_malloc = ft_strlen(&s[start]);
 	}
-	while (i < len && s[i] != '\0')
+	substr = malloc ( sizeof(char) * size_to_malloc + 1);
+	if (!(substr))
+		return (NULL);
+	while (i < size_to_malloc)
 	{
 		substr[i] = s[start + i];
 		i++;
