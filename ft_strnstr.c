@@ -11,10 +11,6 @@ int ft_little_match(const char *big, const char *little)
     }
     return 1;
 }
-// int ft_check_len(const char *str1, const char *str2)
-// {
-//     whi
-// }
 char *ft_strnstr(const char *big,	const char *little, size_t len)
 {
     size_t i;
