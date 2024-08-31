@@ -11,6 +11,7 @@
 /* ************************************************************************** */
 
 #include "libft.h"
+
 char			*ft_strrchr(const char *s, int c)
 {
 	char *s_converted;
@@ -28,22 +29,3 @@ char			*ft_strrchr(const char *s, int c)
 	}
 	return NULL;
 }
-
-
-// #include <stdio.h>
-// #include <string.h>
-// int main (void) {
-// //    int len;
-//    const char str[] = "";
-//    const char ch = '.';
-//    char *ret;
-
-// //    ret = strrchr(str, ch);
-//    ret = ft_strrchr(str, ch);
-
-//    printf("String after |%c| is - |%s|\n", ch, ret);
-   
-//    return(0);
-// }
-
-

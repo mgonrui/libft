@@ -14,11 +14,9 @@
 
 char *ft_strchr(const char *str, int c)
 {
-//	int i;
 	char *p_str;
 	char c_is_char;
 
-	//i = 0;
 	p_str = (char *)str;
 	c_is_char = (char)c; 
 
@@ -35,13 +33,3 @@ char *ft_strchr(const char *str, int c)
 	else 
 		return NULL;
 }
-// #include <stdio.h>
-
-// int	main(void)
-// {
-// 	char	str[] = "teste";
-// 	int		c = 'e';
-
-// 	printf("%s\n", ft_strchr(str, c));
-// 	printf("%s\n", ft_strchr(str, '\0'));
-// } 

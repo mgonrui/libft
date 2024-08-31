@@ -12,7 +12,6 @@
 
 #include "libft.h"
 
-#include <stdio.h>
 
 int ft_is_match(char const *set, char c)
 {
@@ -54,14 +53,3 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return result;
 }
 
-
-// // int	main(void)
-// // {
-// // 	char *s3 = "  \t \t \n   \n\n\n\t";
-// //     // char *s4 = "";
-// //     printf("%s\n", ft_strtrim(s3, " \n\t"));
-// // 	// char s1[] = "honlapipo";
-// // 	// char s2[] = "hola"; 
-// //  	// printf("%s", ft_strtrim(s1, s2));
-// // 	return (0);
-// // } 

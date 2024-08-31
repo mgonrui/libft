@@ -1,6 +1,4 @@
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
@@ -20,20 +18,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return result;
 }
-
-
-// #include <ctype.h>
-// char uppercase(unsigned int i, char c)
-// {
-//     if (i % 2 == 0)
-//         return toupper(c);
-//     else
-//         return tolower(c);
-// }
-
-// int main(void)
-// {
-// 	char *res = ft_strmapi("Hello, World!", uppercase);
-// 	printf("%s\n", res);
-// 	return 0;
-// }

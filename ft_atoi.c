@@ -1,4 +1,5 @@
 #include "libft.h"
+
 int ft_isspace(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f' || c == '\r')
@@ -41,11 +42,3 @@ int ft_atoi(char *str)
 	}
 	return number * sign;
 }
-
-// #include <stdio.h>
-
-// int main(void)
-// {
-// 	printf("%d\n", ft_atoi("    10	lo"));
-// 	return 0;
-// }

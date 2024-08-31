@@ -1,7 +1,5 @@
 #include "libft.h"
-#include <stdlib.h>
 
-#include <stdio.h>
 int ft_count_words(char const *s, char delim)
 {
 	int i;
@@ -81,24 +79,3 @@ char	**ft_split(char const *s, char c)
 	p_to_strs[ft_count_words(s, c)] = NULL;
 	return p_to_strs;
 }
-
-
-
-// int main(void)
-//  {
-//  	// char *s = "split  ||this|for|me|||||!|";
-//  	char *s = "gggggggggggggggggg";
-//  	char c = 'g';
-//      int i = 0;
-//      char **result = ft_split(s, c);	
-//  	printf("%d\n", ft_count_words(s, c));
-//  	while (result[i])
-//  	{
-//  		printf("result[%d] = (%s)\n", i, result[i]);
-// 		i++;
-//  	}
-//  	printf("result[%d] = (%s)\n", i, result[6]);
-//  	return 0;
-//  }
-
-
