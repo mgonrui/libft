@@ -40,13 +40,20 @@ static void	ft_free(char **str)
 {
 	int	i;
 
-	i = -1;
+	i = 0;
 	while (str[i])
 	{
 		free(str[i]);
 		i++;
 	}
+	free(str[i]);
 	free(str);
+}
+
+void ft_add(int *size_to_malloc, int *i)
+{
+	(*size_to_malloc)++;	
+	(*i)++;
 }
 
 char	**ft_split(char const *s, char c)
@@ -63,18 +70,14 @@ char	**ft_split(char const *s, char c)
 		return 0;
 	while (s[i] != '\0')
 	{
-		while (s[i] == c && s[i])
+		while (s[i] == c)
 			i++;
 		size_to_malloc = 0;
-		while (s[i] != c && s[i])
-		{
-			size_to_malloc++;
-			i++;
-		}
+		while (s[i] != c && s[i] != '\0')
+			ft_add(&size_to_malloc, &i);
 		p_to_strs[count] = malloc(sizeof(char) * (size_to_malloc + 1));
 		if (!p_to_strs[count])
 			return (ft_free(p_to_strs), NULL);
-			// return (NULL);
 		if (s[i - size_to_malloc] != '\0')
 			ft_copy_sub_to_str(&s[i - size_to_malloc], c, p_to_strs[count++]);
 	}
@@ -100,3 +103,4 @@ char	**ft_split(char const *s, char c)
  	return 0;
  }
  */
+
