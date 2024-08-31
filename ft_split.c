@@ -36,17 +36,16 @@ void ft_copy_sub_to_str(const char *pos, char delim, char *substr)
 }
 
 
-static void	ft_free(char **str)
+static void	ft_free(char **p_to_strs)
 {
 	int	i;
 
 	i = 0;
-	while (str[i] != NULL)
+	while (p_to_strs[i] != NULL)
 	{
-		free(str[i]);
-		i++;
+		free(p_to_strs[i++]);
 	}
-	free(str);
+	free(p_to_strs);
 }
 
 void ft_add(int *substr_size, int *i)
