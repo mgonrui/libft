@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_tolower.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mariogo2 <mariogo2@student.42malaga.com    +#+  +:+       +#+        */
+/*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:36:36 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/05/13 19:25:56 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/10 19:11:49 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int ch)
+int	ft_tolower(int ch)
 {
-	if (ch >= 'A' && ch <= 'Z') 
-		return (ch + ('a' -  'A'));
+	if (ch >= 'A' && ch <= 'Z')
+		return (ch + ('a' - 'A'));
 	return (ch);
 }

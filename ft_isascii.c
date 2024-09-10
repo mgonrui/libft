@@ -1,6 +1,18 @@
-int ft_isascii(int argument)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/10 19:04:15 by mariogo2          #+#    #+#             */
+/*   Updated: 2024/09/10 19:04:19 by mariogo2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_isascii(int argument)
 {
-	if (argument >= 0 && argument <= 127) 
-		return 1;
-	return 0;
+	if (argument >= 0 && argument <= 127)
+		return (1);
+	return (0);
 }

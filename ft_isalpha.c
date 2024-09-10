@@ -1,7 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/10 19:04:06 by mariogo2          #+#    #+#             */
+/*   Updated: 2024/09/10 19:04:10 by mariogo2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 
-int ft_isalpha(int argument)
+int	ft_isalpha(int argument)
 {
-	if ((argument >= 'a' && argument <= 'z') || (argument >= 'A' && argument <= 'Z'))
-		return 1;
-	return 0;
+	if ((argument >= 'a' && argument <= 'z') || (argument >= 'A'
+			&& argument <= 'Z'))
+		return (1);
+	return (0);
 }

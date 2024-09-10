@@ -1,14 +1,26 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/09/10 19:01:59 by mariogo2          #+#    #+#             */
+/*   Updated: 2024/09/10 19:02:01 by mariogo2         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-int ft_count_words(char const *s, char delim)
+int	ft_count_words(char const *s, char delim)
 {
-	int i;
-	int count;
+	int	i;
+	int	count;
 
 	i = 0;
 	count = 0;
 	if (!s)
-		return 0;
+		return (0);
 	while (s[i] != '\0')
 	{
 		while (s[i] == delim && s[i] != '\0')
@@ -19,12 +31,14 @@ int ft_count_words(char const *s, char delim)
 	}
 	if (s[i - 1] == delim && delim != '\0')
 		count--;
-	return count;
+	return (count);
 }
 
-void ft_copy_sub_to_str(const char *pos, char delim, char *substr)
+void	ft_copy_sub_to_str(const char *pos, char delim, char *substr)
 {
-	int i = 0;
+	int	i;
+
+	i = 0;
 	while (pos[i] != delim && pos[i] != '\0')
 	{
 		substr[i] = pos[i];
@@ -32,7 +46,6 @@ void ft_copy_sub_to_str(const char *pos, char delim, char *substr)
 	}
 	substr[i] = '\0';
 }
-
 
 static void	ft_free(char **p_to_strs)
 {
@@ -46,24 +59,24 @@ static void	ft_free(char **p_to_strs)
 	free(p_to_strs);
 }
 
-void ft_add(int *substr_size, int *i)
+void	ft_add(int *substr_size, int *i)
 {
-	(*substr_size)++;	
+	(*substr_size)++;
 	(*i)++;
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int i;
-	char **p_to_strs;
-	int count;
-	int substr_size;
-	
+	int		i;
+	char	**p_to_strs;
+	int		count;
+	int		substr_size;
+
 	count = 0;
 	i = 0;
 	p_to_strs = malloc(sizeof(char *) * (ft_count_words(s, c) + 1));
 	if (!p_to_strs)
-		return NULL;
+		return (NULL);
 	while (count < ft_count_words(s, c))
 	{
 		while (s[i] == c && s[i] != '\0')
@@ -77,5 +90,5 @@ char	**ft_split(char const *s, char c)
 		count++;
 	}
 	p_to_strs[ft_count_words(s, c)] = NULL;
-	return p_to_strs;
+	return (p_to_strs);
 }
