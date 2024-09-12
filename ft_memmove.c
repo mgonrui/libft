@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:06:42 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:06:44 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:22:36 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,18 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+// #include <string.h>
+// #include <stdio.h>
+// int main() {
+//     char str[50] = "123456";
+
+//     // Copy the string to the middle of itself
+// 	// memmove(str, str + 1, 9);
+//     // memcpy(str + 7, str, 13);
+//     ft_memmove(str, str,4);
+//     // memmove(str, str,4);
+
+//     printf("Modified string: %s\n", str);
+
+//     return 0;
+// }

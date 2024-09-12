@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:02:24 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/11 13:34:46 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:18:52 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,3 +56,10 @@ int	ft_atoi(char *str)
 	}
 	return (number * sign);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	printf("%d\n", ft_atoi("-234"));
+// 	return 0;
+// }

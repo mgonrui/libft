@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/22 15:42:21 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/11 13:27:52 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:23:23 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,13 @@ char	*ft_strchr(const char *str, int c)
 	else
 		return (NULL);
 }
+// #include <stdio.h>
+
+// int	main(void)
+// {
+// 	char	str[] = "teste";
+// 	int		c = 'e';
+
+// 	printf("%s\n", ft_strchr(str, c));
+// 	printf("%s\n", ft_strchr(str, '\0'));
+// }

@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/04/10 14:53:20 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/11 13:33:44 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:37:35 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,12 @@ void	*ft_memset(void *s, int c, size_t n)
 	}
 	return (s);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	char string[] = "hello world";
+// 	printf("%s\n", string);
+// 	ft_memset(string, 'x', 3);
+// 	printf("%s\n", string);
+// }

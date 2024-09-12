@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 17:18:20 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:11:38 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:10:53 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		size_to_malloc = ft_strlen(&s[start]);
 	}
 	substr = malloc(sizeof(char) * size_to_malloc + 1);
-	if (!(substr))
+	if (substr == NULL)
 		return (NULL);
 	while (i < size_to_malloc)
 	{
@@ -40,3 +40,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
+// #include <stdio.h>
+
+// int main(void)
+// {
+// 	const char *string = "123456789";
+// 	printf("%s\n", ft_substr(string,9, 5));
+// 	return 0;
+// }

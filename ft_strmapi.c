@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:10:18 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:10:20 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:24:21 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,18 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	result[i] = '\0';
 	return (result);
 }
+// #include <ctype.h>
+// char uppercase(unsigned int i, char c)
+// {
+//     if (i % 2 == 0)
+//         return toupper(c);
+//     else
+//         return tolower(c);
+// }
+
+// int main(void)
+// {
+// 	char *res = ft_strmapi("Hello, World!", uppercase);
+// 	printf("%s\n", res);
+// 	return 0;
+// }

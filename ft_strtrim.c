@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:32:11 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:11:32 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:25:07 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,3 +54,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	result[i] = '\0';
 	return (result);
 }
+// int	main(void)
+// {
+// 	char *s3 = "  \t \t \n   \n\n\n\t";
+//     // char *s4 = "";
+//     printf("%s\n", ft_strtrim(s3, " \n\t"));
+// 	// char s1[] = "honlapipo";
+// 	// char s2[] = "hola"; 
+//  	// printf("%s", ft_strtrim(s1, s2));
+// 	return (0);
+// } 

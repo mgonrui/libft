@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:01:59 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/11 14:36:06 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 12:22:57 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -92,3 +92,19 @@ char	**ft_split(char const *s, char c)
 	p_to_strs[ft_count_words(s, c)] = NULL;
 	return (p_to_strs);
 }
+// int main(void)
+//  {
+//  	// char *s = "split  ||this|for|me|||||!|";
+//  	char *s = "gggggggggggggggggg";
+//  	char c = 'g';
+//      int i = 0;
+//      char **result = ft_split(s, c);	
+//  	printf("%d\n", ft_count_words(s, c));
+//  	while (result[i])
+//  	{
+//  		printf("result[%d] = (%s)\n", i, result[i]);
+// 		i++;
+//  	}
+//  	printf("result[%d] = (%s)\n", i, result[6]);
+//  	return 0;
+//  }

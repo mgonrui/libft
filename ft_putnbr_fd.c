@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:07:44 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:07:47 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 13:31:37 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,3 +35,8 @@ void	ft_putnbr_fd(int n, int fd)
 		ft_putchar_fd(n + '0', fd);
 	}
 }
+// int main(void)
+// {
+// 	ft_putnbr_fd(123123123, 1);
+// 	return 0;
+// }
