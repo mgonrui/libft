@@ -6,13 +6,13 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/09 18:32:11 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/12 12:25:07 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:52:07 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_is_match(char const *set, char c)
+static int	ft_is_match(char const *set, char c)
 {
 	int	i;
 

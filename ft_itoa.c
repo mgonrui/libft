@@ -6,13 +6,13 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:04:50 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/10 19:04:55 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:46:59 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-long int	ft_count_digits(long int n)
+static long int	ft_count_digits(long int n)
 {
 	long int	ndigits;
 

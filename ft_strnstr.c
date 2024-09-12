@@ -6,25 +6,11 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:10:29 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/12 12:24:36 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:53:05 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-int	ft_little_match(const char *big, const char *little)
-{
-	int	i;
-
-	i = 0;
-	while (little[i] != '\0')
-	{
-		if (little[i] != big[i])
-			return (0);
-		i++;
-	}
-	return (1);
-}
 
 char	*ft_strnstr(const char *big, const char *little, size_t len)
 {

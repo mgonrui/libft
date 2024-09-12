@@ -6,13 +6,13 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:02:24 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/12 12:18:52 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:46:38 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isspace(char c)
+static int	ft_isspace(char c)
 {
 	if (c == ' ' || c == '\t' || c == '\n' || c == '\v' || c == '\f'
 		|| c == '\r')
@@ -20,7 +20,7 @@ int	ft_isspace(char c)
 	return (0);
 }
 
-int	ft_sign_type(char c)
+static int	ft_sign_type(char c)
 {
 	if (c == '+')
 		return (1);
@@ -28,7 +28,7 @@ int	ft_sign_type(char c)
 		return (-1);
 }
 
-int	ft_is_sign(char c)
+static int	ft_is_sign(char c)
 {
 	if (c == '+' || c == '-')
 		return (1);

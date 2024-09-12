@@ -6,13 +6,14 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:01:59 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/12 12:22:57 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/12 14:50:06 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <unistd.h>
 
-int	ft_count_words(char const *s, char delim)
+static int	ft_count_words(char const *s, char delim)
 {
 	int	i;
 	int	count;
@@ -34,19 +35,6 @@ int	ft_count_words(char const *s, char delim)
 	return (count);
 }
 
-void	ft_copy_sub_to_str(const char *pos, char delim, char *substr)
-{
-	int	i;
-
-	i = 0;
-	while (pos[i] != delim && pos[i] != '\0')
-	{
-		substr[i] = pos[i];
-		i++;
-	}
-	substr[i] = '\0';
-}
-
 static void	ft_free(char **p_to_strs)
 {
 	int	i;
@@ -59,7 +47,7 @@ static void	ft_free(char **p_to_strs)
 	free(p_to_strs);
 }
 
-void	ft_add(int *substr_size, int *i)
+static void	ft_add(int *substr_size, int *i)
 {
 	(*substr_size)++;
 	(*i)++;
