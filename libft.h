@@ -6,7 +6,7 @@
 /*   By: mariogo2 <mariogo2@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/10 19:15:36 by mariogo2          #+#    #+#             */
-/*   Updated: 2024/09/11 13:00:26 by mariogo2         ###   ########.fr       */
+/*   Updated: 2024/09/13 13:33:17 by mariogo2         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ void				*ft_memchr(const void *str, int c, size_t n);
 int					ft_memcmp(const void *str1, const void *str2, size_t n);
 char				*ft_strnstr(const char *big, const char *little,
 						size_t len);
-int					ft_atoi(char *str);
+int					ft_atoi(const char *str);
 void				*ft_calloc(size_t num, size_t size);
 char				*ft_strdup(const char *string);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
